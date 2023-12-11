@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="blackbackground" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/utils/loginUser.js"></script>
+    <script src="/utils/script.js"></script>
+    <script src="/utils/api.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+    <script src="/config/firebaseconfig.js"></script>
+    <script src="/utils/checkUserLoggedin.js"></script>
+    <script src="/utils/logoutUser.js"></script>
+    <script src="/utils/displayData.js"></script>
+
+
+</head>
+<body id="login-body">
+<header>
+    <!-- <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      
+      <div class="menu">
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Edit</a></li>
+          <li><a href="#">Main</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>       -->
+</header>
+<main>
+
+
+      
+      
+      
+    <div class="login-screen">
+        <div class="login-overlap-group-wrapper">
+          <div class="login-overlap-group">
+            <div class="background-widget"></div>
+            <div class="text-wrapper-7">DAILY PLANNER</div>
+              
+              <div class="input-box">
+              <div id="create-login-form">
+              <div class="create-user-header"></div>
+              <div class="CREATE-USER">CREATE&nbsp;&nbsp;USER</div>
+              <div class="text-wrapper-6">Email</div>
+              <input id="create-user-email"></input>
+              <div class="text-wrapper-5">Password</div>
+              <input id="create-user-password"></input>
+              <button class="create-button" onclick="appAuthentification.createLogin()">CREATE</button>
+              <!-- <div class="div">Create</div> -->
+              </div>
+
+             <hr>
+
+            <div id="signin-form">
+            <div class="sign-in-header"></div>
+            <div class="text-wrapper-2">SIGN IN</div>
+            <input id="sign-in-password"></input>
+            <div class="text-wrapper-3">Password</div>
+            <input id="sign-in-email-input"></input>
+            <div class="text-wrapper-4">Email</div>
+            <button class="login-button" onclick="appAuthentification.signIn()">LOGIN</button>
+            <!-- <div class="text-wrapper">Login</div> -->
+            </div>
+
+
+            
+            
+           
+            
+           
+          </div>
+          </div>
+        </div>
+      </div>
+
+</main>
+<footer><p class= "footer">&copy Yolande Doe 2023</p></footer>
+    
+</body>
+</html>

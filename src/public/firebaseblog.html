@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+    <script>
+    
+    // Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBr8ykMFa8jTJT1DdECMciBg_mtnMlWvEs",
+  authDomain: "blog-web104.firebaseapp.com",
+  projectId: "blog-web104",
+  storageBucket: "blog-web104.appspot.com",
+  messagingSenderId: "189348674006",
+  appId: "1:189348674006:web:1ec7e8ac9973efeca7cc77"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+// // BLOG APP INSTRUCTION // // 
+
+// 1. Create an Object Oriented Blog Application with the following properties content, author & subject.
+
+// 2. The blog posts will be printed into the DOM.
+
+// 4. We will be utilizing firebase for this project
+
+// DATA STRUCTURE FOR BLOG APP
+
+// Collection: Blogs
+// Documents: Blog Post Title
+// document data structure
+// title: "my first blog post"
+//     content: "hello world "
+//     date: new Data().getTime()
+//     author: "blog author"
+
+window.onload= () => { 
+    document.getElementById('blog').style.display = 'none'
+}
+
+let userID = "";
+let notesArray=[]
+
+let blogAuthentification = {
+
+                user:"",
+                email: null,
+
+createLogin: function(){
+
+this.emailReg = document.getElementById('email-reg').value;
+this.passwordReg = document.getElementById('password-reg').value;
+
+firebase.auth().createUserWithEmailAndPassword(this.emailReg, this.passwordReg)
+.then((userCredential) => {
+// Signed in 
+var user = userCredential.user;
+console.log(user)
+document.getElementById('form').style.display = 'none'
+
+})
+.catch((error) => {
+var errorCode = error.code;
+var errorMessage = error.message;
+
+console.error(errorCode, errorMessage); // Log the error details
+        // Handle errors, display an error message, etc.
+// ..
+});
+
+},
+
+signIn:function (){
+
+this.email = document.getElementById('email-login').value;
+this.password = document.getElementById('password-login').value;
+
+
+firebase.auth().signInWithEmailAndPassword(this.email, this.password) 
+.then((userCredential) => {
+    // Signed in
+    // add a property called userID and then update that property on sign in
+    userID = userCredential.user.uid
+    // 
+// var user = userCredential.user;
+document.getElementById('authentification').style.display = 'none';
+document.getElementById('signInForm').style.display = 'none';
+document.getElementById('form').style.display = 'none';
+document.getElementById('blog').style.display = 'block';
+console.log(blogApp.readAll())   
+
+user = userCredential.user.uid
+console.log(userCredential)
+    
+  
+    // this.getNotes()
+
+   
+    
+})
+.catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+});
+
+},  
+
+checkIfUserIsSignedIn:function(){
+
+    firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    document.getElementById('form').style.display = 'none';
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/v8/firebase.User
+    var uid = user.uid;
+    console.log(user)
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});
+
+}, 
+
+logOut: function () {
+    console.log(firebase)
+    firebase.auth().signOut().then(() =>{
+    console.log("Logged Out");
+    window.location.reload();
+
+})
+.catch ((error) => {
+    //error
+});
+}
+
+}
+
+    // Add a new document in collection "entries"
+    let blogApp = {
+
+        // blogContent: 
+        // date: 
+        // author: 
+        // collection:'Blogs',
+        blogArray:[],
+        
+        addTo: function (){
+
+            // let entry = document.getElementById ().value
+
+            var docRef = db.collection("Blogs").doc(userID);
+
+            docRef.get().then((doc) => {
+                if (doc.exists) {
+                    console.log("Document data:", doc.data())
+            ;
+                
+                    blogArray =  doc.data().blogs
+
+
+
+                } else {
+                    // doc.data() will be undefined in this case
+                    console.log("No such document!");
+                }
+            }).then(response =>{
+
+                let blogData = {
+            
+                
+            title: document.getElementById('title').value,
+            content: document.getElementById('content').value, 
+            date: new Date().getTime(),
+            author: document.getElementById('author').value,
+            
+
+            }
+
+            blogArray.push(blogData)
+
+            db.collection("Blogs").doc(userID).set(
+            {blogs:blogArray}
+            )
+            .then(() => {
+            console.log("Document successfully written!");
+            blogApp.readAll();
+
+            })
+            .catch((error) => {
+            console.error("Error writing document: ", error);
+            });
+            })
+
+            .catch((error) => {
+                console.log("Error getting document:", error);
+            })
+                
+        },
+
+                        // // RENDER BLOG POSTS // // 
+
+                            // getAllDocuments
+                            // displayAllDocuments in HTML Page
+        
+    
+
+        readAll: function () {
+            var docRef = db.collection("Blogs").doc(userID);
+
+            docRef.get().then((doc) => {
+                if (doc.exists) {
+                document.getElementById('displayPosts').innerHTML = '';
+                for (let i = 0; i < doc.data().blogs.length; i++) {
+                    let blog = doc.data().blogs[i];
+                    let element = document.getElementById('displayPosts');
+                    // element.innerHTML += '<p>' + blog.title + '<br>' + blog.content +
+                    // ' <button class="editButton" onclick="blogApp.editPost(' + i + ')">edit</button>' + ' </p>';
+                    
+                    element.innerHTML += '<p>' + blog.title + '<br>' + blog.content +
+  ' <button class="editButton" onclick="blogApp.editPost(' + i + ')">Edit</button>' + ' <button class="updateButton" onclick="blogApp.updatePost(' + i + ')">Update</button>' + ' </p>';
+                }
+                } else {
+                console.log("No such document!");
+                }
+            }).catch((error) => {
+                console.log("Error getting document:", error);
+            });
+},
+
+
+editPost: function (index) {
+  var docRef = db.collection("Blogs").doc(userID);
+
+  docRef.get().then((doc) => {
+    if (doc.exists) {
+      let blog = doc.data().blogs[index];
+      document.getElementById('content').value = blog.content;
+      document.getElementById('content').disabled = false; // Enable editing
+      document.getElementById('title').value = blog.title;
+      document.getElementById('author').value = blog.author;
+    } else {
+      console.log("No such document!");
+    }
+  }).catch((error) => {
+    console.log("Error getting document:", error);
+  });
+},
+
+updatePost: function (index) {
+  let blogData = {
+    title: document.getElementById('title').value,
+    content: document.getElementById('content').value,
+    date: new Date().getTime(),
+    author: document.getElementById('author').value,
+  };
+
+  var docRef = db.collection("Blogs").doc(userID);
+  docRef.get().then((doc) => {
+    if (doc.exists) {
+      let blogs = doc.data().blogs;
+      blogs[index] = blogData;
+
+      docRef.set({ blogs: blogs })
+        .then(() => {
+          console.log("Document successfully updated!");
+          blogApp.readAll();
+          // Reset fields after updating
+          document.getElementById('title').value = '';
+          document.getElementById('content').value = '';
+          document.getElementById('author').value = '';
+        })
+        .catch((error) => {
+          console.error("Error updating document: ", error);
+        });
+    } else {
+      console.log("No such document!");
+    }
+  }).catch((error) => {
+    console.log("Error getting document:", error);
+  });
+
+    }
+
+    }
+
+
+   
+
+</script>
+</head>
+
+<body style="background-color: rgb(87, 102, 102); text-align: left;">
+<header>
+
+    <div id="authentification" style="margin:0 auto; padding:20px; width:500px; text-align: center; background-color: white; border: solid .3em grey; ">
+        <div id="form" style="padding: 10px;">
+        <h2>CREATE USER</h2>
+       <label>email login:</label> <input label="email registration" id="email-reg" type=text> 
+       <label>password:</label><input label="password registration" id="password-reg" type=text> 
+       
+       <div class="button" style="padding: 10px;"><button onclick="blogAuthentification.createLogin()">Create user</button></div>
+        </div>
+
+    <div id="signInForm" style="padding: 10px;">
+    <h2>LOGIN USER</h2>
+   <label>email login:</label> <input label="email login" id="email-login" type=text> 
+   <label>password:</label><input label="password" id="password-login" type=text> 
+   <div class="button" style="padding: 10px;"><button onclick="blogAuthentification.signIn()">login user</button>
+   </div>
+    </div>
+
+</div>
+
+<br>
+    
+</header>
+<div id="blog">
+<div id="wrapper" style="display:grid; grid-template-columns: 600px 1fr 200px;" >
+<main style="max-width: 800px;">
+    <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 3em;">BLOG</h1>
+    <div>
+    <!--  input fields for title -->
+    <p>Title<br>
+    <input style="width: 300px;" id="title" type="text">
+    </p>
+    </div>
+    <!--  input fields for content -->
+    <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 2em;">Entry</p>
+    <p><textarea id="content" type="text" style="width: 400px; height: 600px;"></textarea>
+    </p>
+    <div>
+    <!--  input fields for author -->
+    <p>Author<br>
+    <input style="width: 300px;" id='author' type="text">
+    </p>
+    </div>
+      <!-- post button -->
+      <button onclick="blogApp.addTo()">POST</button>
+</main>
+
+<aside style="max-width: 400px;">
+    <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 2em;">PREVIOUS</h1>
+
+    <div id="displayPosts"></div>
+</aside>
+</div>
+</div>
+<br>
+<br>
+<div id="logout" style="text-align: center;">
+    <button onclick="blogAuthentification.logOut()">Log Out</button>
+    </div>
+      
+<footer> <p style="text-align: center;">&copy Yolande Doe 2023</p></footer>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+

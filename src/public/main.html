@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner App Main</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/utils/script.js"></script>
+    <script src="/utils/api.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+    <script src="/config/firebaseconfig.js"></script>
+    <script src="/utils/loginUser.js"></script>
+    <script src="/utils/logoutUser.js"></script>
+    <script src="/utils/displayData.js"></script>
+    <script src="/utils/checkUserLoggedin.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+          </div>
+          
+          <div class="menu">
+            <ul>
+              <li onclick="userLoginStatus.checkIfUserIsSignedIn()"><a>Login</a></li>
+              <li><a href="/public/blogedit.html">Edit</a></li>
+              <li><a href="/public/main.html">Main</a></li>
+              <li onclick="signOut.logOut()"><a>Log Out</a></li>
+            </ul>
+          </div>
+          
+    </header>
+    <main>
+        <div class="render-window">
+            <div class="overlap-group-wrapper">
+              <div class="overlap-group">
+                <div id="body-div">
+              
+
+                <div class="render-display">
+                <button class="div" onclick="navigateToBlogEdit()">New Entry</button>
+                <div id="image-display"></div>
+                <div id="post-content-display"></div>
+                </div>
+
+                <div id="assistant-window">
+                <div class="text-wrapper-4">ASSISTANT</div>
+                <div class="assistant-display">
+                <button id="text-speech" onclick="readContent() ">REMINDERS</button>
+                <button class="post-button-2" onclick="displayQuote()">DAILY INSPIRATION</button>
+                <div class="daily-inspiration"></div>
+               
+                </div>
+                </div>
+
+                <div class="appointments-window">
+                <div class="text-wrapper-5">APPOINTMENTS</div>
+                <div id="appointments-display"></div>
+              </div>
+
+
+                <!-- <div class="rendered-posts"></div> 
+                <div class="text-wrapper-6">WEATHER</div>
+                <div class="display-posts"></div>
+                <div class="temp-display"></div>
+                <div class="weather-detail"></div> -->
+              </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer><p style="text-align: center;">&copy Yolande Doe 2023</p></footer>
+
+</body>
+</html>

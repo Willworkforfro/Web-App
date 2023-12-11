@@ -1,0 +1,2727 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Ubuntu+Mono:wght@700&family=Zen+Dots&display=swap');
+
+body{
+    margin:0;
+}
+
+footer {
+  text-align: center;
+  color:#4e8b90;
+}
+
+textarea {
+  resize: none;
+}
+
+#display-posts, #appointments-display {
+  padding:10px;
+  overflow-x: auto;
+}
+
+#display-posts p {
+  font-family: "Ubunto Mono", Helvetica;
+  color: rgb(255, 235, 54);
+  font-size: 13px;
+  line-height: 1.5;
+  background-color: rgba(14, 120, 20, 0.64);
+}
+
+#appointments-display p {
+  margin:5px;
+  font-family: "Ubunto Mono", Helvetica;
+  color: rgb(39, 30, 30);
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 5px;
+  background-color: rgba(160, 197, 142, 0.64)
+
+}
+
+/*---------------------------------------------------------------- */
+                         /*MOBILE Authentification page*/
+/*---------------------------------------------------------------- */
+
+hr {
+  position:relative;
+  border: 2px solid #6d619c;
+  width: 200px;
+  top:362px;
+  right:-1px;
+}
+
+.blackbackground {
+
+  background-color: #000000;
+ 
+}
+
+
+.login-screen {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-screen .login-overlap-group-wrapper {
+  background-color: #000000;
+  width: 700px;
+  height: 887px;
+}
+
+.login-screen .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 393px;
+  height: 852px;
+}
+
+.login-screen .overlap-group {
+  position: relative;
+  height: 852px;
+  background-color: #000000;
+}
+
+.login-screen .background-widget {
+  position: absolute;
+  width: 393px;
+  height: 852px;
+  top: 0;
+  left: 29px;
+  background: linear-gradient(
+    180deg,
+    rgba(44.47, 59.33, 137.34, 0.19) 7.81%,
+    rgba(121.1, 107.56, 187.35, 0.64) 59.38%,
+    rgb(137.62, 245.9, 232.9) 100%
+  );
+}
+
+.login-screen .input-box {
+  position: absolute;
+  width: 319px;
+  height: 751px;
+  top: 51px;
+  left: 69px;
+  border-radius: 35px;
+  background: linear-gradient(
+    180deg,
+    rgba(226.67, 180.44, 255, 0) 2.6%,
+    rgba(180.44, 210.26, 255, 0.58) 63.54%,
+    rgb(121, 215, 221) 92.71%
+  );
+}
+
+#create-login-form {
+  position: absolute;
+    top: -48px;
+    right: 401px;
+  }
+
+  #signin-form {
+    position: absolute;
+    top: -53px;
+    right: 401px;
+  }
+
+.login-screen .line-divider {
+  position: absolute;
+  width: 273px;
+  height: 6px;
+  top: 416px;
+  left: 61px;
+}
+
+
+
+.login-screen .text-wrapper {
+  position: absolute;
+  top: 721px;
+  left: 215px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.login-screen .create-button {
+  position: absolute;
+  width: 80px;
+  height: 29px;
+  top: 360px;
+  left: 199px;
+  background-color: #595e5d;
+  border-radius: 8px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+#create-user-email {
+  position: absolute;
+  width: 259px;
+  height: 24px;
+  top: 221px;
+  left: 20vw;
+  background-color: #ffffff;
+}
+
+.login-screen #create-user-password {
+  position: absolute;
+  width: 259px;
+  height: 24px;
+  top: 311px;
+  left: 20vw;
+  background-color: #ffffff;
+}
+
+.login-screen .div {
+  position: absolute;
+  top: 363px;
+  left: 209px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  z-index: 3;
+  
+}
+
+.login-screen .text-wrapper-2 {
+  position: absolute;
+  top: 468px;
+  left: 198px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-wrap: nowrap;
+
+}
+
+.login-screen .text-wrapper-3 {
+  position: absolute;
+  top: 619px;
+  left: 170px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.login-screen .create-user-header {
+  position: absolute;
+  width: 187px;
+  height: 43px;
+  top: 118px;
+  left: 28vw;
+  background-color: #595e5d;
+  border-radius: 32px;
+  border: 1px solid;
+  border-color: #6d619c;
+}
+
+.login-screen .CREATE-USER {
+  position: absolute;
+  top: 128px;
+  left: 30vw;
+  font-family:"Michroma", Helvetica;
+  font-weight: 400;
+  color: #fffcfc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.login-screen .login-button {
+  position: absolute;
+  width: 80px;
+  height: 29px;
+  top: 719px;
+  left: 199px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.login-screen .text-wrapper-4 {
+  position: absolute;
+  top: 531px;
+  left: 200px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  
+}
+
+.login-screen .sign-in-header {
+  position: absolute;
+  width: 187px;
+  height: 43px;
+  top: 458px;
+  left: 28vw;
+  background-color: #ffffff;
+  border-radius: 32px;
+  border: 1px solid;
+  border-color: #6d619c;
+}
+
+.login-screen .text-wrapper-5 {
+
+  position: absolute;
+  top: 272px;
+  left: 177px;
+  font-family:"Michroma", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.login-screen #sign-in-password {
+  position: absolute;
+  width: 259px;
+  height: 30px;
+  top: 663px;
+  left: 20vw;
+  background-color: #f0f0f0;
+}
+
+.login-screen .text-wrapper-6 {
+  position: absolute;
+  top: 185px;
+  left: 205px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+ 
+}
+
+.login-screen #sign-in-email-input {
+  position: absolute;
+  width: 259px;
+  height: 30px;
+  top: 567px;
+  left: 20vw;
+  background-color: #f0f0f0;
+}
+
+.login-screen .text-wrapper-7 {
+  
+
+  position: absolute;
+  top: 63px;
+  left: 65px;
+  text-shadow: 0px 4px 4px #19141b40;
+  font-family:"Zen Dots", Helvetica;
+  font-weight: 400;
+  color: #e0ffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+/*---------------------------------------------------------------- */
+                        /*MOBILE EDITING PAGE*/
+/*---------------------------------------------------------------- */
+
+.data-input {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.data-input .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 393px;
+  height: 2237px;
+}
+
+.data-input .overlap-group {
+  position: relative;
+    /* left: -50px;
+    width: 490px; */
+    height: 2240px;
+  background: linear-gradient(
+    180deg,
+    rgba(44.47, 59.33, 137.34, 0.19) 7.81%,
+    rgba(121.1, 107.56, 187.35, 0.64) 29.14%,
+    rgb(137.62, 245.9, 232.9) 100%
+  );
+}
+
+.data-input .overlap-2 {
+  position: absolute;
+  width: 356px;
+  height: 992px;
+  top: 1228px;
+  left: 18px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.data-input .overlap {
+  position: absolute;
+  width: 356px;
+  height: 930px;
+  top: 275px;
+  left: 18px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.data-input .text-wrapper {
+  position: absolute;
+  top: 41px;
+  left: 25px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: normal;
+}
+
+#display-posts {
+  position: absolute;
+  width: 331px;
+  height: 885px;
+  top: 87px;
+  left: 12px;
+  background-color: #79d7dd;
+}
+
+.data-input .div {
+  font-family: "Michroma", Helvetica;
+  position: absolute;
+  font-size: 16px;
+  /* width: 117px; */
+  /* height: 784px; */
+  top: 477px;
+  left: 26px;
+}
+
+input#title-input {
+  position: absolute;
+  width: 311px;
+  height: 25px;
+  top: 65px;
+  left: 25px;
+  background-color: #ebebeb;
+}
+
+.data-input .text-wrapper-2 {
+  position: absolute;
+  top: 552px;
+  left: 26px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+input#author-input {
+  position: absolute;
+  width: 311px;
+  height: 24px;
+  top: 504px;
+  left: 26px;
+  background-color: #e8e7e7;
+}
+
+.data-input .text-wrapper-3 {
+  position: absolute;
+  top: 696px;
+  left: 26px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+textarea#image-prompt-input {
+  position: absolute;
+  width: 311px;
+  height: 94px;
+  top: 579px;
+  left: 26px;
+  background-color: #e8e7e7;
+  resize:none;
+}
+
+.data-input .text-wrapper-4 {
+  position: absolute;
+    top: 109px;
+    left: 26px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+#category-input {
+  position: absolute;
+  width: 311px;
+  height: 25px;
+  top: 720px;
+  left: 26px;
+  background-color: #e8e7e7;
+}
+
+.data-input .text-wrapper-5 {
+  position: absolute;
+  top: 6px;
+  left: 25px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+textarea#content-input {
+  position: absolute;
+  width: 311px;
+  height: 329px;
+  top: 131px;
+  left: 26px;
+  background-color: #e8e7e7;
+}
+
+.data-input .text-wrapper-6 {
+  position: absolute;
+  top: 28px;
+  left: 18px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.data-input .div-wrapper {
+  position: absolute;
+  width: 113px;
+  height: 39px;
+  top: 864px;
+  left: 123px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+  font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.data-input .text-wrapper-7 {
+
+  position: absolute;
+    top: 193px;
+    left: 35px;
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Zen Dots", Helvetica;
+    font-weight: 400;
+    color: #e0ffff;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.data-input .text-wrapper-8 {
+  position: absolute;
+  top: 159px;
+  left: 52px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Zen Dots-Regular", Helvetica;
+  font-weight: 400;
+  color: #e0ffff;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+                          /*---------------------------------------------------------------- */
+                                                  /*MOBILE RENDER*/
+                          /*---------------------------------------------------------------- */
+                          
+                          .date-time {
+                          position: absolute;
+                          top: 780px;
+                          left: 25px;
+                          font-family: "Michroma", Helvetica;
+                          font-weight: 400;
+                          color: #000000;
+                          font-size: 16px;
+                          letter-spacing: 2px;
+                          line-height: normal;
+                          white-space: nowrap;
+                        }
+
+
+                         input#appointment-time {
+                              position: absolute;
+                              top: 808px;
+                              left: 26px;
+                            }
+
+                          .render-window {
+                            background-color: #ffffff;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            width: 100%;
+                          }
+                          
+                          .render-window .overlap-group-wrapper {
+                            background-color: #ffffff;
+                            width: 100%;
+                            height: 100%;
+                          }
+                          
+                          .render-window .overlap-group {
+                            position: relative;
+                            height: 4000px;
+                            background: linear-gradient(
+                              180deg,
+                              rgba(5.18, 14.17, 64.5, 0.64) 6.78%,
+                              rgba(18.26, 44.19, 189.4, 0.64) 48.47%,
+                              rgba(12.84, 31.74, 137.61, 0.64) 70.95%,
+                              rgba(0, 0, 0, 0.64) 98.27%
+                            );
+                          }
+                          
+                          #body-div {
+                            position: absolute;
+                            width: 398px;
+                            height: 3766px;
+                            top: 210px;
+                            left: 15px;
+                            background-color: #ffffff;
+                            border-radius: 29px;
+                          }
+                          
+                          .render-window .text-wrapper {
+                            position: absolute;
+                            top: 238px;
+                            left: 69px;
+                            font-family: "Michroma", Helvetica;
+                            font-weight: 400;
+                            color: #000000;
+                            font-size: 16px;
+                            letter-spacing: 7.04px;
+                            line-height: normal;
+                          }
+                          
+                          .render-window .div {
+                            position: absolute;
+                            top: -85px;
+                            left: 17px;
+                            font-family: "Michroma", Helvetica;
+                            font-weight: 400;
+                            color: #000000;
+                            font-size: 22px;
+                            letter-spacing: 0;
+                            line-height: 0;
+                            width: 340px;
+                            height: 51px;
+                            border-radius: 16px;
+                            background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+                                                  }
+                          
+                         #assistant-window {
+                            position: absolute;
+                            width: 370px;
+                            height: 653px;
+                            top: 1776px;
+                            left: 13px;
+                            background-color: #b4d2ff94;
+                            border-radius: 16px;
+                          }
+                          
+                          .render-window .assistant-display {
+                            position: absolute;
+                            width: 332px;
+                            height: 549px;
+                            top: 79px;
+                            left: 19px;
+                            background-color: #79d7dd;
+                            border-radius: 31px;
+                          }
+                          
+                          .render-window .blog-display {
+                            position: absolute;
+                            width: 764px;
+                            height: 1983px;
+                            top: 328px;
+                            left: 124px;
+                          }
+                          .render-display {
+                            position: absolute;
+                            width: 370px;
+                            height:1618px;
+                            top: 123px;
+                            left: 13px;
+                            background-color: #d9d9d9;
+                            border-radius: 21px;
+                        }
+                          
+                          div#image-display {
+                            position: absolute;
+                            width: 327px;
+                            height: 372px;
+                            top: 87px;
+                            left: 22px;
+                            background-color: #f7f7f7;
+                            border-radius: 21px;
+                          }
+                          
+                          div#post-content-display {
+                            position: absolute;
+                            width: 327px;
+                            height: 193px;
+                            top: 488px;
+                            left: 22px;
+                            background-color: #f7f7f7;
+                            border-radius: 21px;
+                          }
+                          
+                          .render-window .daily-inspiration {
+                            position: absolute;
+                            width: 280px;
+                            height: 333px;
+                            top: 174px;
+                            left: 18px;
+                            background-color: #ffffff;
+                            border-radius: 22px;
+                            z-index: 3;
+                            padding:10px;
+                            font-family: "Ubunto-Mono", Helvetica;
+                            font-size: 20px;
+                            color:rgb(64, 165, 148);
+                            background-color: #efecf7;
+                            text-align: center;
+                          }
+                          
+                          button#text-speech {
+                            position: absolute;
+                            width: 193px;
+                            height: 51px;
+                            top: 28px;
+                            left: 69px;
+                            border-radius: 16px;
+                            background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+                            font-family: "Michroma", Helvetica;
+                            font-weight: 400;
+                            color: #000000;
+                            font-size: 18px;
+                            letter-spacing: 0;
+                            z-index: 2;
+                          }
+                          
+                          .render-window .post-button-2 {
+                            position: absolute;
+                            width: 279px;
+                            height: 51px;
+                            top: 107px;
+                            left: 26px;
+                            border-radius: 16px;
+                            background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+                            font-family: "Michroma", Helvetica;
+                            font-weight: 400;
+                            color: #000000;
+                            font-size: 18px;
+                            letter-spacing: 0;
+                            z-index: 3;
+                          }
+                          
+                          .render-window .text-wrapper-2 {
+                            position: absolute;
+                            top: 2115px;
+                            left: 148px;
+                            font-family: "Michroma", Helvetica;
+                            font-weight: 400;
+                            color: #000000;
+                            font-size: 18px;
+                            letter-spacing: 0;
+                            line-height: normal;
+                            white-space: nowrap;
+                          }
+                          
+                          .render-window .text-wrapper-3 {
+                            position: absolute;
+                            top: 2195px;
+                            left: 117px;
+                            font-family: "Michroma", Helvetica;
+                            font-weight: 400;
+                            color: #000000;
+                            font-size: 16px;
+                            letter-spacing: 0;
+                            line-height: normal;
+                            white-space: nowrap;
+                          }
+
+
+                         
+                          
+                          .render-window .text-wrapper-4 {
+                            position: absolute;
+                            top: 17px;
+                            left: 63px;
+                            font-family: "Michroma", Helvetica;
+                            font-weight: 800;
+                            color: #000000;
+                            font-size: 24px;
+                            letter-spacing: 5.28px;
+                            line-height: normal;
+                          }
+                          
+                          .render-window .appointments-window {
+                            position: absolute;
+                            width: 370px;
+                            height: 1265px;
+                            top: 2470px;
+                            left: 13px;
+                            background-color: #d4e5ff;
+                            border-radius: 16px;
+                          }
+                          
+                          .render-window .text-wrapper-5 {
+                            position: absolute;
+                            width: 285px;
+                            top: 17px;
+                            left: 42px;
+                            font-family: "Michroma", Helvetica;
+                            font-weight: 400;
+                            color: #000000;
+                            font-size: 20px;
+                            letter-spacing: 4.4px;
+                            line-height: normal;
+                          }
+                          
+                          div#appointments-display {
+                            position: absolute;
+                            width: 338px;
+                            height: 1162px;
+                            top: 61px;
+                            left: 6px;
+                            background-color: #79d7dd;
+                            border-radius: 31px;
+                          }
+                          
+                          .render-window .rendered-posts {
+                            position: absolute;
+                            width: 452px;
+                            height: 421px;
+                            top: 1890px;
+                            left: 937px;
+                            background-color: #d4e5ff;
+                            border-radius: 16px;
+                          }
+                          
+                          .render-window .text-wrapper-6 {
+                            position: absolute;
+                            top: 1918px;
+                            left: 1073px;
+                            font-family: "Michroma", Helvetica;
+                            font-weight: 400;
+                            color: #000000;
+                            font-size: 20px;
+                            letter-spacing: 4.4px;
+                            line-height: normal;
+                          }
+                          
+                          .render-window .display-posts {
+                            position: absolute;
+                            width: 361px;
+                            height: 291px;
+                            top: 1974px;
+                            left: 983px;
+                            background-color: #79d7dd;
+                            border-radius: 31px;
+                          }
+                          
+                          .render-window .temp-display {
+                            position: absolute;
+                            width: 218px;
+                            height: 132px;
+                            top: 2007px;
+                            left: 1054px;
+                            background-color: #d9d9d9;
+                            border-radius: 19px;
+                          }
+                          
+                          .render-window .weather-detail {
+                            position: absolute;
+                            width: 306px;
+                            height: 78px;
+                            top: 2158px;
+                            left: 1010px;
+                            background-color: #fffdfd;
+                            border-radius: 16px;
+                          }
+                          
+
+  /*---------------------------------------------------------------- */
+                            /*MOBILE Hamburger menu*/
+   /*---------------------------------------------------------------- */
+.menu-btn {
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Align to the right */
+    z-index: 7;
+  }
+  
+  .btn-line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-line:nth-child(1) {
+    top: 0;
+  }
+  
+  .btn-line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .btn-line:nth-child(3) {
+    bottom: 0;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: -8px; /* Adjust the top position as needed */
+    right: 60px; /* Align to the right */
+    z-index: 8;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin-bottom: 10px;
+    width: 307px;
+    background-color: rgb(64, 165, 148);
+    text-align: center;
+    padding: 5px;
+    transition: all .3s ease-out;
+  }
+
+  .menu ul li:hover {
+    background-color: rgb(11, 49, 35); /* Change color on hover */
+    transform: translate(0, -5px);
+  }
+
+  .menu ul li a {
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    transition: color 0.3s ease; /* Adding transition for smooth color change */
+  }
+  
+  .menu ul li a:hover {
+    color: rgb(222, 246, 63); /* Change color on hover */
+
+  }
+  
+
+                        /*---------------------------------------------------------------- */
+                                                   /*media queries* TABLET/
+                        /*---------------------------------------------------------------- */
+
+
+                        @media screen and (min-width:700px){
+
+                          /*---------------------------------------------------------------- */
+                                                      /*TABLET and DESKTOP Hamburger menu*/ 
+                          /*---------------------------------------------------------------- */
+                        .menu-btn {
+                          display: block;
+                          width: 30px;
+                          height: 20px;
+                          cursor: pointer;
+                          position: absolute;
+                          top: 20px;
+                          right: 20px; /* Align to the right */
+                          z-index: 7;
+                        }
+
+
+                        .menu {
+                          display: none;
+                          position: absolute;
+                          top: -8px; /* Adjust the top position */
+                          right: 84px; /* Align to the right */
+                          z-index: 8;
+                        }
+
+                      
+
+                        .menu ul li {
+                          margin-bottom: 10px;
+                          width: 138px;
+                          background-color: rgb(64, 165, 148);
+                          text-align: center;
+                          padding: 8px;
+                        }
+
+                        .menu ul li:hover {
+                            background-color: rgb(11, 49, 35); /* Change color on hover */
+                            transform: translate(0, -5px);
+                        }
+
+                        .menu ul li a {
+                          font-family: "Michroma", Helvetica;
+                          font-weight: 400;
+                          text-decoration: none;
+                          color: rgb(255, 255, 255);
+                          font-size: 15px;
+                          transition: color 0.3s ease; /* Adding transition for smooth color change */
+                        }
+
+                        .menu ul li a:hover {
+                          color: rgb(222, 246, 63); /* Change color on hover */
+
+                        }
+
+
+/*---------------------------------------------------------------- */
+                         /*TABLET Authentification page*/
+/*---------------------------------------------------------------- */
+      hr {
+        position:relative;
+        border: 2px solid #6d619c;
+        width: 501px;
+        top:417px;
+        
+      }
+
+
+    .login-screen {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .login-screen .login-overlap-group-wrapper {
+        background-color: #000000;
+        width: 1000px;
+        height: 1300px;
+      }
+      
+      
+      .login-screen .overlap-group-wrapper {
+        margin: 0 auto;
+        background-color: #ffffff;
+        overflow: hidden;
+        width: 744px;
+        height: 1133px;
+      }
+      
+      .login-screen .overlap-group {
+        margin: 0 auto;
+        position: relative;
+        width: 818px;
+        height: 1133px;
+        /* left: -37px; */
+        background-color: #000000;
+        border-radius: 48px;
+      }
+      
+      .login-screen .background-widget {
+        margin: 0 auto;
+        position: absolute;
+        width: 818px;
+        height: 1133px;
+        top: 0;
+        left: 4vw;
+        /* border-radius: 48px; */
+        background: linear-gradient(
+          180deg,
+          rgba(44.47, 59.33, 137.34, 0.19) 7.81%,
+          rgba(121.1, 107.56, 187.35, 0.64) 59.38%,
+          rgb(137.62, 245.9, 232.9) 100%
+        );
+      }
+      
+      .login-screen .input-box {
+        margin: 0 auto;
+        position: absolute;
+        width: 623px;
+        height: 856px;
+        top: 172px;
+        left: 14vw;
+        border-radius: 57px;
+        background: linear-gradient(
+          180deg,
+          rgba(226.67, 180.44, 255, 0) 0%,
+          rgba(180.44, 210.26, 255, 0.58) 40.1%,
+          rgb(121, 215, 221) 92.71%
+        );
+      }
+
+      #create-login-form {
+      position: absolute;
+      top: -195px;
+      right: 731px;
+      }
+    
+      #signin-form {
+        position: absolute;
+        top: -156px;
+        right: 731px;
+    
+      }
+      
+      .login-screen .login-button {
+        margin: 0 auto;
+        position: absolute;
+        width: 100px;
+        height: 41px;
+        top: 931px;
+        left: 44vw;
+        background-color: #ffffff;
+        border-radius: 8px;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .login-screen .text-wrapper {
+        margin: 0 auto;
+        position: absolute;
+        width: 61px;
+        top: 935px;
+        left: 47vw;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .login-screen .create-button {
+        margin: 0 auto;
+        position: absolute;
+        width: 100px;
+        height: 42px;
+        top: 549px;
+        left: 44vw;
+        background-color: #595e5d;
+        border-radius: 8px;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      /* .login-screen .div {
+        margin: 0 auto;
+        position: absolute;
+        width: 81px;
+        top: 556px;
+        left: 46vw;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+      } */
+      
+      .login-screen .sign-in-header {
+        margin: 0 auto;
+        position: absolute;
+        width: 331px;
+        height: 63px;
+        top: 641px;
+        left: 30vw;
+        background-color: #ffffff;
+        border-radius: 32px;
+        border: 1px solid;
+        border-color: #6d619c;
+      }
+      
+      .login-screen .text-wrapper-2 {
+        margin: 0 auto;
+        position: absolute;
+        width: 122px;
+        top: 651px;
+        left: 42vw;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+        text-wrap: nowrap;
+      }
+      
+      .login-screen .create-user-header {
+        margin: 0 auto;
+        position: absolute;
+        width: 331px;
+        height: 62px;
+        top: 253px;
+        left: 30vw;
+        background-color: #595e5d;
+        border-radius: 32px;
+        border: 1px solid;
+        border-color: #6d619c;
+      }
+      
+      .login-screen .CREATE-USER {
+        margin: 0 auto;
+        position: absolute;
+        width: 245px;
+        top: 263px;
+        left: 35vw;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #fffcfc;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      #create-user-email {
+        margin: 0 auto;
+        position: absolute;
+        width: 321px;
+        height: 33px;
+        top: 389px;
+        left: 30vw;
+        background-color: #ffffff;
+      }
+      
+      .login-screen #sign-in-password {
+        margin: 0 auto;
+        position: absolute;
+        width: 321px;
+        height: 33px;
+        top: 868px;
+        left: 30vw;
+        background-color: #f0f0f0;
+      }
+      
+      .login-screen .text-wrapper-3 {
+        margin: 0 auto;
+        position: absolute;
+        width: 113px;
+        top: 827px;
+        left: 42vw;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .login-screen #sign-in-email-input {
+        margin: 0 auto;
+        position: absolute;
+        width: 321px;
+        height: 34px;
+        top: 777px;
+        left: 30vw;
+        background-color: #f0f0f0;
+      }
+      
+      .login-screen .text-wrapper-4 {
+        margin: 0 auto;
+        position: absolute;
+        width: 81px;
+        top: 732px;
+        left: 46vw;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .login-screen #create-user-password {
+        margin: 0 auto;
+        position: absolute;
+        width: 321px;
+        height: 33px;
+        top: 486px;
+        left: 30vw;
+        background-color: #ffffff;
+      }
+      
+      .login-screen .text-wrapper-5 {
+        margin: 0 auto;
+        position: absolute;
+        width: 113px;
+        top: 446px;
+        left: 42vw;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .login-screen .line-divider {
+        margin: 0 auto;
+        position: absolute;
+        width: 433px;
+        height: 5px;
+        top: 607px;
+        /* left: 193px; */
+      }
+      
+      .login-screen .text-wrapper-6 {
+        margin: 0 auto;
+        position: absolute;
+        width: 81px;
+        top: 343px;
+        left: 46vw;
+        font-family: "Michroma", Helvetica;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .login-screen .text-wrapper-7 {
+        margin: 0 auto;
+        position: absolute;
+        width: 623px;
+        top: 133px;
+        left: 14vw;
+        text-shadow: 0px 4px 4px #19141b40;
+        font-family: "Zen Dots", Helvetica;
+        font-weight: 400;
+        color: #e0ffff;
+        font-size: 60px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      
+      
+
+
+
+/*---------------------------------------------------------------- */
+                        /*TABLET EDITING PAGE*/
+/*---------------------------------------------------------------- */
+.data-input {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.data-input .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 744px;
+  height: 2466px;
+}
+
+.data-input .overlap-group {
+  position: relative;
+  height: 2466px;
+  
+  background: linear-gradient(
+    180deg,
+    rgba(44.47, 59.33, 137.34, 0.19) 7.81%,
+    rgba(121.1, 107.56, 187.35, 0.64) 29.14%,
+    rgb(137.62, 245.9, 232.9) 100%
+  );
+}
+
+.data-input .overlap {
+  position: absolute;
+  width: 674px;
+  height: 1079px;
+  top: 247px;
+  left: 35px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+input#title-input {
+  position: absolute;
+  width: 536px;
+  height: 32px;
+  top: 84px;
+  left: 69px;
+  background-color: #ebebeb;
+}
+
+.data-input .text-wrapper {
+  position: absolute;
+  top: 43px;
+  left: 69px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+input#author-input {
+  position: absolute;
+  width: 536px;
+  height: 32px;
+  top: 655px;
+  left: 69px;
+  background-color: #e8e7e7;
+}
+
+.data-input .div {
+  position: absolute;
+  top: 619px;
+  left: 69px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+textarea#image-prompt-input {
+  position: absolute;
+  width: 536px;
+  height: 32px;
+  top: 753px;
+  left: 69px;
+  background-color: #e8e7e7;
+}
+
+.data-input .text-wrapper-2 {
+  position: absolute;
+  top: 717px;
+  left: 69px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+#category-input {
+  position: absolute;
+  width: 536px;
+  height: 32px;
+  top: 846px;
+  left: 69px;
+  background-color: #e8e7e7;
+}
+
+.data-input .text-wrapper-3 {
+  position: absolute;
+  top: 810px;
+  left: 69px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.data-input .date-time {
+  position: absolute;
+  top: 915px;
+  left: 69px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+textarea#content-input {
+  position: absolute;
+  width: 536px;
+  height: 429px;
+  top: 170px;
+  left: 69px;
+  background-color: #e8e7e7;
+}
+
+.data-input .text-wrapper-4 {
+  position: absolute;
+  top: 130px;
+  left: 69px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.data-input .div-wrapper {
+  position: absolute;
+  width: 193px;
+  height: 51px;
+  top: 1002px;
+  left: 241px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+}
+
+.data-input .text-wrapper-5 {
+  position: absolute;
+  top: 12px;
+  left: 65px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.data-input .text-wrapper-6 {
+  position: absolute;
+      top: 28px;
+      left: 181px;
+      font-family: "Michroma", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 20px;
+      letter-spacing: 4.4px;
+      line-height: normal;
+}
+
+.data-input .overlap-2 {
+  position: absolute;
+  width: 674px;
+  height: 1020px;
+  top: 1353px;
+  left: 35px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.data-input .text-wrapper-7 {
+      position: absolute;
+      top: 153px;
+      left: 195px;
+      text-shadow: 0px 4px 4px #00000040;
+      font-family: "Zen Dots", Helvetica;
+      font-weight: 400;
+      color: #e0ffff;
+      font-size: 55px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+}
+
+#display-posts {
+  position: absolute;
+  width: 536px;
+  height: 888px;
+  top: 84px;
+  left: 69px;
+  background-color: #79d7dd;
+}
+
+
+
+
+
+/*---------------------------------------------------------------- */
+                         /*TABLET RENDER*/
+/*---------------------------------------------------------------- */
+
+
+input#appointment-time {
+  position: absolute;
+  top: 801px;
+  left: 289px;
+}
+
+
+.render-window {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+/* .render-window .overlap-group-wrapper {
+  background-color: #ffffff;
+   width: 1512px;
+  height: 1948px;
+} */
+
+.render-window .overlap-group {
+  position: relative;
+  height: 3665px;
+  background: linear-gradient(
+    180deg,
+    rgba(5.18, 14.17, 64.5, 0.64) 6.78%,
+    rgba(18.26, 44.19, 189.4, 0.64) 48.47%,
+    rgba(12.84, 31.74, 137.61, 0.64) 70.95%,
+    rgba(0, 0, 0, 0.64) 98.27%
+  );
+}
+
+#body-div {
+  position: absolute;
+  width: 782px;
+  height: 3415px;
+  top: 210px;
+  left: 11px;
+  background-color: #ffffff;
+  border-radius: 29px;
+}
+
+.render-window .text-wrapper {
+  position: absolute;
+  top: 249px;
+  left: 77px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 23px;
+  letter-spacing: 7.04px;
+  line-height: normal;
+}
+
+.render-window .div {
+  position: absolute;
+  top: -81px;
+  left: 227px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 23px;
+  letter-spacing: 7.04px;
+  line-height: normal;
+}
+
+#assistant-window {
+  position: absolute;
+  width: 761px;
+  height: 583px;
+  top: 1487px;
+  left: 11px;
+  background-color: #b4d2ff94;
+  border-radius: 16px;
+}
+
+.render-window .assistant-display {
+  position: absolute;
+  width: 719px;
+  height: 472px;
+  top: 85px;
+  left: 20px;
+  background-color: #79d7dd;
+  border-radius: 31px;
+}
+
+.render-window .blog-display {
+  position: absolute;
+  width: 764px;
+  height: 1983px;
+  top: 328px;
+  left: 124px;
+}
+.render-display {
+  position: absolute;
+  width: 761px;
+  height:1322px;
+  top: 112px;
+  left: 11px;
+  background-color: #d9d9d9;
+  border-radius: 21px;
+}
+
+div#image-display {
+  position: absolute;
+  width: 719px;
+  height: 346px;
+  top: 87px;
+  left: 20px;
+  background-color: #f7f7f7;
+  border-radius: 21px;
+}
+
+div#post-content-display {
+  position: absolute;
+  width: 719px;
+  height: 193px;
+  top: 464px;
+  left: 20px;
+  background-color: #f7f7f7;
+  border-radius: 21px;
+}
+
+.render-window .daily-inspiration {
+  position: absolute;
+  width: 665px;
+  height: 315px;
+  top: 111px;
+  left: 16px;
+  border-radius: 22px;
+  z-index: 3;
+  padding:10px;
+  font-family: "Ubunto-Mono", Helvetica;
+  font-size: 30px;
+  color:rgb(64, 165, 148);
+  background-color: #efecf7;
+  text-align: center;
+}
+
+button#text-speech {
+  position: absolute;
+  width: 193px;
+  height: 51px;
+  top: 47px;
+  left: 53px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+  z-index: 2;
+}
+
+.render-window .post-button-2 {
+  position: absolute;
+  width: 317px;
+  height: 51px;
+  top: 47px;
+  left: 355px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+  z-index: 2;
+}
+
+.render-window .text-wrapper-2 {
+  position: absolute;
+  top: 2268px;
+  left: 129px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.render-window .text-wrapper-3 {
+  position: absolute;
+  top: 2269px;
+  left: 477px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+input#appointment-time {
+ position: absolute;
+ top: 949px;
+ left: 69px;
+ }
+
+.render-window .text-wrapper-4 {
+  position: absolute;
+  top: 24px;
+  left: 260px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 5.28px;
+  line-height: normal;
+}
+
+.render-window .appointments-window {
+  position: absolute;
+  width: 761px;
+  height: 1294px;
+  top: 2104px;
+  left: 11px;
+  background-color: #b4d2ff94;
+  border-radius: 16px;
+}
+
+.render-window .text-wrapper-5 {
+  position: absolute;
+  width: 285px;
+  top: 34px;
+  left: 241px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 4.4px;
+  line-height: normal;
+}
+
+div#appointments-display {
+  position: absolute;
+  width: 719px;
+  height: 1180px;
+  top: 91px;
+  left: 8px;
+  background-color: #79d7dd;
+  border-radius: 31px;
+}
+
+.render-window .rendered-posts {
+  position: absolute;
+  width: 452px;
+  height: 421px;
+  top: 1890px;
+  left: 937px;
+  background-color: #d4e5ff;
+  border-radius: 16px;
+}
+
+.render-window .text-wrapper-6 {
+  position: absolute;
+  top: 1918px;
+  left: 1073px;
+  font-family: "Michroma", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 4.4px;
+  line-height: normal;
+}
+
+.render-window .display-posts {
+  position: absolute;
+  width: 361px;
+  height: 291px;
+  top: 1974px;
+  left: 983px;
+  background-color: #79d7dd;
+  border-radius: 31px;
+}
+
+.render-window .temp-display {
+  position: absolute;
+  width: 218px;
+  height: 132px;
+  top: 2007px;
+  left: 1054px;
+  background-color: #d9d9d9;
+  border-radius: 19px;
+}
+
+.render-window .weather-detail {
+  position: absolute;
+  width: 306px;
+  height: 78px;
+  top: 2158px;
+  left: 1010px;
+  background-color: #fffdfd;
+  border-radius: 16px;
+}
+
+
+
+}
+
+                        /*---------------------------------------------------------------- */
+                                                        /*media queries* DESKTOP/
+                        /*---------------------------------------------------------------- */
+
+                        @media screen and (min-width:1100px){
+
+                    /*---------------------------------------------------------------- */
+                                            /* DESKTOP EDITING PAGE*/
+                    /*---------------------------------------------------------------- */
+
+
+                  .data-input {
+                      background-color: #8d8aa6;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                      width: 100%;
+                    }
+                    
+                    .data-input .overlap-group-wrapper {
+                      background-color: #8d8aa6;
+                      width: 1512px;
+                      height: 1300px;
+                    }
+                    
+                    .data-input .overlap-group {
+                      position: relative;
+                      height: 1300px;
+                      background: linear-gradient(
+                        180deg,
+                        rgba(44.47, 59.33, 137.34, 0.19) 7.81%,
+                        rgba(121.1, 107.56, 187.35, 0.64) 29.14%,
+                        rgb(137.62, 245.9, 232.9) 100%
+                      );
+                    }
+                    
+                    .data-input .overlap {
+                      position: absolute;
+                      width: 674px;
+                      height: 1064px;
+                      top: 207px;
+                      left: 77px;
+                      background-color: #ffffff;
+                      border-radius: 16px;
+                    }
+                    
+                    input#title-input {
+                      position: absolute;
+                      width: 536px;
+                      height: 32px;
+                      top: 84px;
+                      left: 69px;
+                      background-color: #ebebeb;
+                    }
+                    
+                    .data-input .text-wrapper {
+                      position: absolute;
+                      top: 43px;
+                      left: 69px;
+                      font-family: "Michroma", Helvetica;
+                      font-weight: 400;
+                      color: #000000;
+                      font-size: 20px;
+                      letter-spacing: 2px;
+                      line-height: normal;
+                      white-space: nowrap;
+                    }
+                    
+                    input#author-input {
+                      position: absolute;
+                      width: 536px;
+                      height: 32px;
+                      top: 655px;
+                      left: 69px;
+                      background-color: #e8e7e7;
+                    }
+                    
+                    .data-input .div {
+                      position: absolute;
+                      top: 619px;
+                      left: 69px;
+                      font-family: "Michroma", Helvetica;
+                      font-weight: 400;
+                      color: #000000;
+                      font-size: 18px;
+                      letter-spacing: 2px;
+                      line-height: normal;
+                      white-space: nowrap;
+                    }
+                    
+                    textarea#image-prompt-input {
+                      position: absolute;
+                      width: 536px;
+                      height: 32px;
+                      top: 753px;
+                      left: 69px;
+                      background-color: #e8e7e7;
+                    }
+                    
+                    .data-input .text-wrapper-2 {
+                      position: absolute;
+                      top: 717px;
+                      left: 69px;
+                      font-family: "Michroma", Helvetica;
+                      font-weight: 400;
+                      color: #000000;
+                      font-size: 18px;
+                      letter-spacing: 2px;
+                      line-height: normal;
+                      white-space: nowrap;
+                    }
+                    
+                    #category-input {
+                      position: absolute;
+                      width: 536px;
+                      height: 32px;
+                      top: 846px;
+                      left: 69px;
+                      background-color: #e8e7e7;
+                    }
+                    
+                    .data-input .text-wrapper-3 {
+                      position: absolute;
+                      top: 810px;
+                      left: 69px;
+                      font-family: "Michroma", Helvetica;
+                      font-weight: 400;
+                      color: #000000;
+                      font-size: 18px;
+                      letter-spacing: 2px;
+                      line-height: normal;
+                      white-space: nowrap;
+                    }
+
+                    .data-input .date-time{
+                      position: absolute;
+                      top: 915px;
+                      left: 69px;
+                      font-family: "Michroma", Helvetica;
+                      font-weight: 400;
+                      color: #000000;
+                      font-size: 18px;
+                      letter-spacing: 2px;
+                      line-height: normal;
+                      white-space: nowrap;
+                    }
+                    
+                    textarea#content-input {
+                      position: absolute;
+                      width: 536px;
+                      height: 429px;
+                      top: 170px;
+                      left: 69px;
+                      background-color: #e8e7e7;
+                    }
+                    
+                    .data-input .text-wrapper-4 {
+                      position: absolute;
+                      top: 130px;
+                      left: 69px;
+                      font-family: "Michroma", Helvetica;
+                      font-weight: 400;
+                      color: #000000;
+                      font-size: 20px;
+                      letter-spacing: 2px;
+                      line-height: normal;
+                      white-space: nowrap;
+                    }
+                    
+                    .data-input .div-wrapper {
+                      position: absolute;
+                      width: 193px;
+                      height: 51px;
+                      top: 990px;
+                      left: 241px;
+                      border-radius: 16px;
+                      background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+                    }
+                    
+                    .data-input .text-wrapper-5 {
+                      position: absolute;
+                      top: 12px;
+                      left: 61px;
+                      font-family: "Michroma", Helvetica;
+                      font-weight: 400;
+                      color: #000000;
+                      font-size: 18px;
+                      letter-spacing: 2px;
+                      line-height: normal;
+                      white-space: nowrap;
+                    }
+                    
+                    .data-input .overlap-2 {
+                      position: absolute;
+                      width: 402px;
+                      height: 1065px;
+                      top: 207px;
+                      left: 822px;
+                      background-color: #ffffff;
+                      border-radius: 16px;
+                    }
+                    
+                    .data-input .text-wrapper-6 {
+                      position: absolute;
+                      top: 33px;
+                      left: 41px;
+                      font-family: "Michroma", Helvetica;
+                      font-weight: 400;
+                      color: #000000;
+                      font-size: 20px;
+                      letter-spacing: 4.4px;
+                      line-height: normal;
+                    }
+                    
+                    #display-posts {
+                      position: absolute;
+                      width: 322px;
+                      height: 949px;
+                      top: 84px;
+                      left: 41px;
+                      background-color: #79d7dd;
+                    }
+                    
+                    .data-input .text-wrapper-7 {
+                      position: absolute;
+                      top: 100px;
+                      left: 564px;
+                      text-shadow: 0px 4px 4px #00000040;
+                      font-family: "Zen Dots", Helvetica;
+                      font-weight: 400;
+                      color: #e0ffff;
+                      font-size: 60px;
+                      letter-spacing: 0;
+                      line-height: normal;
+                      white-space: nowrap;
+                    }
+                    
+/*---------------------------------------------------------------- */
+                         /* DESKTOP Authentification page*/
+/*---------------------------------------------------------------- */
+
+hr {
+  position:relative;
+  border: 2px solid #6d619c;
+  width: 501px;
+  top:396px;
+  
+}
+
+.login-body {
+
+    background-color: #000000;
+}
+
+.login-screen {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .login-screen .login-overlap-group-wrapper {
+    background-color: #000000;
+    width: 1512px;
+    height: 1030px;
+  }
+  
+  .login-screen .login-overlap-group {
+    /* height: 1030px; */
+    background-color: #000000;
+  }
+  
+  .login-screen .background-widget {
+    position: absolute;
+    width: 818px;
+    height: 929px;
+    top: 26px;
+    left: 347px;
+    border-radius: 48px;
+    background: linear-gradient(
+      180deg,
+      rgba(44.47, 59.33, 137.34, 0.19) 7.81%,
+      rgba(121.1, 107.56, 187.35, 0.64) 59.38%,
+      rgb(137.62, 245.9, 232.9) 100%
+    );
+  }
+  
+  .login-screen .input-box {
+    position: absolute;
+    width: 623px;
+    height: 778px;
+    top: 124px;
+    left: 445px;
+    border-radius: 57px;
+    background: linear-gradient(
+      180deg,
+      rgba(226.67, 180.44, 255, 0) 0%,
+      rgba(180.44, 210.26, 255, 0.58) 40.1%,
+      rgb(133, 221, 195) 92.71%
+    );
+  }
+
+  #create-login-form {
+    position: absolute;
+    top: -133px;
+    right: 1072px;
+  }
+
+  #signin-form {
+    position: absolute;
+    top: -120px;
+    right: 1072px;
+
+  }
+  
+  .login-screen .login-button {
+    position: absolute;
+    width: 100px;
+    height: 39px;
+    top: 829px;
+    left: 707px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .login-screen .text-wrapper {
+    position: absolute;
+    width: 61px;
+    top: 834px;
+    left: 729px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login-screen .create-button {
+    position: absolute;
+    width: 100px;
+    height: 39px;
+    top: 474px;
+    left: 707px;
+    background-color: #595e5d;
+    border-radius: 8px;
+  }
+  
+  /* .login-screen .div {
+    position: absolute;
+    width: 81px;
+    top: 479px;
+    left: 722px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  } */
+  
+  .login-screen .sign-in-header {
+    position: absolute;
+    width: 331px;
+    height: 58px;
+    top: 560px;
+    left: 586px;
+    background-color: #ffffff;
+    border-radius: 32px;
+    border: 1px solid;
+    border-color: #6d619c;
+  }
+  
+  .login-screen .text-wrapper-2 {
+    position: absolute;
+    top: 569px;
+    left: 685px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-wrap: nowrap;
+  }
+  
+  .login-screen .create-user-header {
+    position: absolute;
+    width: 331px;
+    height: 58px;
+    top: 199px;
+    left: 586px;
+    background-color: #595e5d;
+    border-radius: 32px;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .login-screen .CREATE-USER {
+    position: absolute;
+    top: 209px;
+    left: 631px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  #create-user-email {
+    position: absolute;
+    width: 321px;
+    height: 31px;
+    top: 326px;
+    left: 596px;
+    background-color: #dadada;
+  }
+  
+  .login-screen #sign-in-password {
+    position: absolute;
+    width: 321px;
+    height: 31px;
+    top: 770px;
+    left: 596px;
+    background-color: #ffffff;
+  }
+  
+  .login-screen .text-wrapper-3 {
+    position: absolute;
+    width: 113px;
+    top: 733px;
+    left: 697px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login-screen #sign-in-email-input {
+    position: absolute;
+    width: 321px;
+    height: 31px;
+    top: 686px;
+    left: 596px;
+    background-color: #ffffff;
+  }
+  
+  .login-screen .text-wrapper-4 {
+    position: absolute;
+    width: 81px;
+    top: 644px;
+    left: 726px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login-screen #create-user-password {
+    position: absolute;
+    width: 321px;
+    height: 31px;
+    top: 416px;
+    left: 596px;
+    background-color: #dadada;
+  }
+  
+  .login-screen .text-wrapper-5 {
+    position: absolute;
+    width: 113px;
+    top: 378px;
+    left: 697px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login-screen .line-divider {
+    position: absolute;
+    width: 433px;
+    height: 2px;
+    top: 530px;
+    left: 540px;
+  }
+  
+  .login-screen .text-wrapper-6 {
+    position: absolute;
+    width: 81px;
+    top: 283px;
+    left: 726px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .login-screen .text-wrapper-7 {
+    position: absolute;
+    top: 99px;
+    left: 445px;
+    text-shadow: 0px 4px 4px #19141b40;
+    font-family: "Zen Dots", Helvetica;
+    font-weight: 400;
+    color: #e0ffff;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+
+/*---------------------------------------------------------------- */
+                         /*DESKTOP RENDER*/
+/*---------------------------------------------------------------- */
+
+.render-window {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .render-window .overlap-group-wrapper {
+    background-color: #ffffff;
+    width: 1512px;
+    height: 1948px;
+  }
+  
+  .render-window .overlap-group {
+    position: relative;
+    height: 2000px;
+    background: linear-gradient(
+      180deg,
+      rgba(5.18, 14.17, 64.5, 0.64) 6.78%,
+      rgba(18.26, 44.19, 189.4, 0.64) 48.47%,
+      rgba(12.84, 31.74, 137.61, 0.64) 70.95%,
+      rgba(0, 0, 0, 0.64) 98.27%
+    );
+  }
+  
+  #body-div {
+    position: absolute;
+    width: 1262px;
+    height: 1738px;
+    top: 210px;
+    left: 9px;
+    background-color: #ffffff;
+    border-radius: 25px;
+  }
+  
+  .render-window .text-wrapper {
+    position: absolute;
+    top: 232px;
+    left: 325px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 7.04px;
+    line-height: normal;
+  }
+  
+  .render-window .div {
+    position: absolute;
+    top: -75px;
+    left: 477px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 7.04px;
+    line-height: normal;
+  }
+  
+  #assistant-window {
+    position: absolute;
+    width: 452px;
+    height: 653px;
+    top: 103px;
+    left: 798px;
+    background-color: #b4d2ff94;
+    border-radius: 16px;
+  }
+  
+  .render-window .assistant-display {
+    position: absolute;
+    width: 402px;
+    height: 523px;
+    top: 96px;
+    left: 26px;
+    background-color: #79d7dd;
+    border-radius: 31px;
+  }
+  
+  .render-window .blog-display {
+    position: absolute;
+    width: 764px;
+    height: 1983px;
+    top: 328px;
+    left: 124px;
+  }
+  .render-display {
+    position: absolute;
+    width: 745px;
+    height:1594px;
+    top: 103px;
+    left: 21px;
+    background-color: #d9d9d9;
+    border-radius: 21px;
+}
+  
+    div#image-display {
+    position: absolute;
+    width: 680px;
+    height: 346px;
+    top: 87px;
+    left: 30px;
+    background-color: #f7f7f7;
+    border-radius: 21px;
+  }
+  
+  div#post-content-display {
+    position: absolute;
+    width: 680px;
+    height: 193px;
+    top: 464px;
+    left: 30px;
+    background-color: #f7f7f7;
+    border-radius: 21px;
+  }
+  
+  .render-window .daily-inspiration {
+    position: absolute;
+    width: 343px;
+    height: 308px;
+    top: 169px;
+    left: 21px;
+    background-color: #ffffff;
+    border-radius: 22px;
+    z-index: 3;
+    padding:10px;
+    font-family: "Ubunto-Mono", Helvetica;
+    font-size: 20px;
+    color:rgb(64, 165, 148);
+    background-color: #efecf7;
+    text-align: center;
+  }
+  
+  button#text-speech {
+    position: absolute;
+    width: 193px;
+    height: 51px;
+    top: 29px;
+    left: 105px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+  }
+  
+  .render-window .post-button-2 {
+    position: absolute;
+    width: 271px;
+    height: 51px;
+    top: 101px;
+    left: 67px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.69) 25%, rgb(196.4, 196.4, 196.4) 100%);
+  }
+  
+  .render-window .text-wrapper-2 {
+    position: absolute;
+    top: 465px;
+    left: 1068px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .render-window .text-wrapper-3 {
+    position: absolute;
+    top: 550px;
+    left: 1027px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .render-window .text-wrapper-4 {
+    position: absolute;
+    top: 35px;
+    left: 108px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 5.28px;
+    line-height: normal;
+  }
+  
+  .render-window .appointments-window {
+    position: absolute;
+    width: 452px;
+    height: 885px;
+    top: 812px;
+    left: 798px;
+    background-color: #d4e5ff;
+    border-radius: 16px;
+}
+  
+  
+  .render-window .text-wrapper-5 {
+    position: absolute;
+    width: 285px;
+    top: 22px;
+    left: 93px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 4.4px;
+    line-height: normal;
+  }
+  
+  div#appointments-display {
+    position: absolute;
+    width: 402px;
+    height: 761px;
+    top: 72px;
+    left: 16px;
+    background-color: #79d7dd;
+    border-radius: 31px;
+    padding: 10px;
+  }
+  
+  .render-window .rendered-posts {
+    position: absolute;
+    width: 452px;
+    height: 421px;
+    top: 1890px;
+    left: 937px;
+    background-color: #d4e5ff;
+    border-radius: 16px;
+  }
+  
+  .render-window .text-wrapper-6 {
+    position: absolute;
+    top: 1918px;
+    left: 1073px;
+    font-family: "Michroma", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 4.4px;
+    line-height: normal;
+  }
+  
+  .render-window .display-posts {
+    position: absolute;
+    width: 361px;
+    height: 291px;
+    top: 1974px;
+    left: 983px;
+    background-color: #79d7dd;
+    border-radius: 31px;
+  }
+  
+  .render-window .temp-display {
+    position: absolute;
+    width: 218px;
+    height: 132px;
+    top: 2007px;
+    left: 1054px;
+    background-color: #d9d9d9;
+    border-radius: 19px;
+  }
+  
+  .render-window .weather-detail {
+    position: absolute;
+    width: 306px;
+    height: 78px;
+    top: 2158px;
+    left: 1010px;
+    background-color: #fffdfd;
+    border-radius: 16px;
+  }
+  
+}
+
